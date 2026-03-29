@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
     title: 'About Us',
-    description: 'Learn about Easy Systems - a well-established infrastructure and IT services company founded in 2014, delivering enterprise solutions across Egypt, UAE, and UK.',
+    description: 'Learn about Easy System - a well-established infrastructure and IT services company founded in 2014, delivering enterprise solutions across Egypt, UAE, and UK.',
 }
 
 const values = [
@@ -46,7 +46,7 @@ const values = [
 ]
 
 const timeline = [
-    { year: '2014', title: 'Foundation', description: 'Easy Systems established in Egypt with a focus on Oracle Technologies' },
+    { year: '2014', title: 'Foundation', description: 'Easy System established in Egypt with a focus on Oracle Technologies' },
     { year: '2016', title: 'Enterprise Expansion', description: 'Major oil & gas and banking clients onboarded, team expanded to 50+' },
     { year: '2018', title: 'UAE Operations', description: 'Opened Dubai office to serve Gulf region enterprises' },
     { year: '2020', title: 'Cloud Excellence', description: 'Achieved Microsoft and AWS partner certifications' },
@@ -61,14 +61,14 @@ export default function AboutPage() {
             <section className="relative pt-32 pb-20 bg-gradient-to-br from-foreground via-gray-900 to-foreground overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
                     <div className="absolute inset-0" style={{
-                        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FF3419' fill-opacity='0.3'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+                        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%237C1029' fill-opacity='0.3'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
                     }} />
                 </div>
 
                 <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center">
                         <span className="inline-block px-4 py-2 bg-primary/20 text-primary rounded-full text-sm font-medium mb-6">
-                            About Easy Systems
+                            About Easy System
                         </span>
                         <h1 className="text-white mb-6">
                             Building Technology Foundations<br />
@@ -89,7 +89,7 @@ export default function AboutPage() {
                         <span className="text-primary font-semibold uppercase tracking-wider">Our Story</span>
                         <h2 className="mt-4 mb-6">A Decade of Excellence</h2>
                         <p className="text-muted text-lg mb-6">
-                            Founded in 2014, Easy Systems began with a clear vision: to provide enterprises with infrastructure
+                            Founded in 2014, Easy System began with a clear vision: to provide enterprises with infrastructure
                             solutions that are as reliable as they are innovative. What started as a specialized Oracle services
                             provider in Egypt has grown into a multinational technology company serving clients across the
                             Middle East, Europe, and beyond.
@@ -304,7 +304,7 @@ export default function AboutPage() {
                 <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-white mb-6">Ready to Partner With Us?</h2>
                     <p className="text-xl text-white/80 mb-10">
-                        Let&apos;s discuss how Easy Systems can help transform your infrastructure into a competitive advantage.
+                        Let&apos;s discuss how Easy System can help transform your infrastructure into a competitive advantage.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="/contact" className="bg-white text-primary font-semibold px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors shadow-lg">

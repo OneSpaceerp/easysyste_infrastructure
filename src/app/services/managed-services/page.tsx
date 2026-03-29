@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
     title: 'Managed Services & Support',
-    description: '24/7 monitoring, proactive maintenance, on-site engineering support, and guaranteed SLA performance from Easy Systems.',
+    description: '24/7 monitoring, proactive maintenance, on-site engineering support, and guaranteed SLA performance from Easy System.',
 }
 
 const supportModels = [

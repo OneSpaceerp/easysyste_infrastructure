@@ -144,7 +144,7 @@ export default function Footer() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
                     <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
                         <p className="text-white/60 text-sm">
-                            © {new Date().getFullYear()} Easy Systems. All rights reserved.
+                            © {new Date().getFullYear()} Easy System Inc. All rights reserved.
                         </p>
                         <div className="flex space-x-6">
                             <Link href="/privacy" className="text-white/60 hover:text-white text-sm transition-colors">
@@ -155,7 +155,7 @@ export default function Footer() {
                             </Link>
                         </div>
                         <p className="text-white/60 text-sm">
-                            info@eysmt.com
+                            info@easysystemegypt.com
                         </p>
                     </div>
                 </div>

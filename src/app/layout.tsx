@@ -18,14 +18,14 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
     title: {
-        default: 'Easy Systems | Enterprise Infrastructure Solutions',
-        template: '%s | Easy Systems Infrastructure'
+        default: 'Easy System | Enterprise Infrastructure Solutions',
+        template: '%s | Easy System Infrastructure'
     },
-    description: 'Secure, scalable, and resilient infrastructure solutions designed, implemented, and managed by Easy Systems. Enterprise-grade IT services for zero downtime operations.',
+    description: 'Secure, scalable, and resilient infrastructure solutions designed, implemented, and managed by Easy System. Enterprise-grade IT services for zero downtime operations.',
     keywords: ['infrastructure', 'IT services', 'cloud', 'data center', 'network security', 'managed services', 'Egypt', 'UAE', 'UK'],
-    authors: [{ name: 'Easy Systems' }],
-    creator: 'Easy Systems',
-    publisher: 'Easy Systems',
+    authors: [{ name: 'Easy System' }],
+    creator: 'Easy System',
+    publisher: 'Easy System',
     robots: {
         index: true,
         follow: true,
@@ -34,22 +34,22 @@ export const metadata: Metadata = {
         type: 'website',
         locale: 'en_US',
         url: 'https://infrastructure.easysystemegypt.com',
-        siteName: 'Easy Systems Infrastructure',
-        title: 'Easy Systems | Enterprise Infrastructure Solutions',
-        description: 'Secure, scalable, and resilient infrastructure solutions designed, implemented, and managed by Easy Systems.',
+        siteName: 'Easy System Infrastructure',
+        title: 'Easy System | Enterprise Infrastructure Solutions',
+        description: 'Secure, scalable, and resilient infrastructure solutions designed, implemented, and managed by Easy System.',
         images: [
             {
                 url: '/og-image.jpg',
                 width: 1200,
                 height: 630,
-                alt: 'Easy Systems Infrastructure',
+                alt: 'Easy System Infrastructure',
             },
         ],
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Easy Systems | Enterprise Infrastructure Solutions',
-        description: 'Secure, scalable, and resilient infrastructure solutions designed, implemented, and managed by Easy Systems.',
+        title: 'Easy System | Enterprise Infrastructure Solutions',
+        description: 'Secure, scalable, and resilient infrastructure solutions designed, implemented, and managed by Easy System.',
     },
 }
 

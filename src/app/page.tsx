@@ -146,7 +146,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-br from-foreground via-gray-900 to-foreground" />
                 <div className="absolute inset-0 opacity-20">
                     <div className="absolute inset-0" style={{
-                        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FF3419' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+                        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%237C1029' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
                     }} />
                 </div>
 
@@ -164,7 +164,7 @@ export default function Home() {
                             <span className="gradient-text">Built for Zero Downtime</span>
                         </h1>
                         <p className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto mb-10">
-                            Secure, scalable, and resilient infrastructure solutions designed, implemented, and managed by Easy Systems.
+                            Secure, scalable, and resilient infrastructure solutions designed, implemented, and managed by Easy System.
                             Your business deserves technology foundations that never fail.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -206,10 +206,10 @@ export default function Home() {
             <section className="section-container">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     <div>
-                        <span className="text-primary font-semibold uppercase tracking-wider">About Easy Systems</span>
+                        <span className="text-primary font-semibold uppercase tracking-wider">About Easy System</span>
                         <h2 className="mt-4 mb-6">Who We Are</h2>
                         <p className="text-muted text-lg mb-6">
-                            Founded in 2014, Easy Systems has grown into a premier technology services company with a proven track record
+                            Founded in 2014, Easy System has grown into a premier technology services company with a proven track record
                             of delivering enterprise-grade infrastructure solutions across Egypt, UAE, and UK.
                         </p>
                         <p className="text-muted text-lg mb-8">
@@ -289,12 +289,12 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Why Easy Systems Section */}
+            {/* Why Easy System Section */}
             <section className="bg-foreground py-20">
                 <div className="section-container">
                     <div className="section-title">
                         <span className="text-primary font-semibold uppercase tracking-wider">Why Choose Us</span>
-                        <h2 className="text-white mt-4">Why Easy Systems</h2>
+                        <h2 className="text-white mt-4">Why Easy System</h2>
                         <p className="text-white/70 mt-4">
                             We combine deep technical expertise with a relentless commitment to your success
                         </p>

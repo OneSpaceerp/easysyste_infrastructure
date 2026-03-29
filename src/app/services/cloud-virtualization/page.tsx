@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
     title: 'Cloud & Virtualization',
-    description: 'Azure, AWS, Oracle Cloud migrations, hybrid cloud architectures, and cloud operations optimization from Easy Systems.',
+    description: 'Azure, AWS, Oracle Cloud migrations, hybrid cloud architectures, and cloud operations optimization from Easy System.',
 }
 
 const capabilities = [

@@ -8,19 +8,19 @@ const locations = [
         country: 'Egypt',
         address: 'Mokattam - Villa 7528 Shireen Badwai ST',
         phone: '+201117600868',
-        email: 'egypt@eysmt.com',
+        email: 'egypt@easysystemegypt.com',
     },
     {
         country: 'United Arab Emirates',
         address: 'Unit 23, First Floor, Opal Tower, Business Bay, Dubai',
         phone: '+971507095315',
-        email: 'uae@eysmt.com',
+        email: 'uae@easysystemegypt.com',
     },
     {
         country: 'United Kingdom',
         address: 'The Ropewalk Nottingham, NG1 5DT',
         phone: '+447476972114',
-        email: 'uk@eysmt.com',
+        email: 'uk@easysystemegypt.com',
     },
 ]
 
@@ -227,7 +227,7 @@ export default function ContactPage() {
                         <div className="mt-8 p-6 bg-primary/5 rounded-xl">
                             <h4 className="font-heading font-bold text-lg mb-2">General Inquiries</h4>
                             <p className="text-muted">
-                                Email: <a href="mailto:info@eysmt.com" className="text-primary hover:underline">info@eysmt.com</a>
+                                Email: <a href="mailto:info@easysystemegypt.com" className="text-primary hover:underline">info@easysystemegypt.com</a>
                             </p>
                         </div>
                     </div>

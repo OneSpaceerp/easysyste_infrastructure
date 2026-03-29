@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
     title: 'Case Studies',
-    description: 'Explore how Easy Systems has helped enterprises transform their infrastructure with real-world success stories.',
+    description: 'Explore how Easy System has helped enterprises transform their infrastructure with real-world success stories.',
 }
 
 const caseStudies = [
@@ -12,7 +12,7 @@ const caseStudies = [
         client: 'Major Oil & Gas Company',
         industry: 'Oil & Gas',
         challenge: 'The client needed to modernize their aging data center infrastructure and establish reliable connectivity across 50+ remote drilling sites, while maintaining strict security requirements.',
-        solution: 'Easy Systems designed and implemented a hybrid cloud architecture with Oracle Cloud Infrastructure, deployed SD-WAN connectivity to all remote sites, and established a 24/7 NOC for continuous monitoring.',
+        solution: 'Easy System designed and implemented a hybrid cloud architecture with Oracle Cloud Infrastructure, deployed SD-WAN connectivity to all remote sites, and established a 24/7 NOC for continuous monitoring.',
         technologies: ['Oracle Cloud', 'SD-WAN', 'Cisco Networking', 'VMware', 'Fortinet Security'],
         results: [
             '99.99% uptime achieved across all sites',
@@ -40,7 +40,7 @@ const caseStudies = [
         client: 'Government Ministry',
         industry: 'Government',
         challenge: 'A government ministry needed to consolidate multiple legacy data centers into a modern, secure, and sovereign infrastructure platform while ensuring zero disruption to citizen services.',
-        solution: 'Easy Systems executed a phased data center consolidation, deploying private cloud infrastructure with comprehensive security controls and establishing inter-agency connectivity.',
+        solution: 'Easy System executed a phased data center consolidation, deploying private cloud infrastructure with comprehensive security controls and establishing inter-agency connectivity.',
         technologies: ['Oracle Exadata', 'VMware vSphere', 'Cisco ACI', 'Oracle IAM', 'NetApp Storage'],
         results: [
             '5 data centers consolidated to 2',
@@ -65,7 +65,7 @@ export default function CaseStudiesPage() {
                         <span className="gradient-text">Studies</span>
                     </h1>
                     <p className="text-xl text-white/80 max-w-3xl mx-auto">
-                        Real-world examples of how Easy Systems helps enterprises transform their infrastructure.
+                        Real-world examples of how Easy System helps enterprises transform their infrastructure.
                     </p>
                 </div>
             </section>
