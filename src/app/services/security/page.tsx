@@ -79,26 +79,31 @@ export default function SecurityPage() {
     return (
         <>
             {/* Hero Section */}
-            <section className="relative pt-32 pb-20 bg-gradient-to-br from-foreground via-gray-900 to-foreground overflow-hidden">
-                <div className="absolute inset-0 opacity-10">
-                    <div className="absolute inset-0" style={{
-                        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%237C1029' fill-opacity='0.3'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-                    }} />
-                </div>
+            <section className="relative pt-32 pb-20 bg-[#0E0D0D] overflow-hidden border-b border-white/10">
+                <div
+                    className="absolute inset-0 pointer-events-none"
+                    style={{
+                        backgroundImage:
+                            'radial-gradient(circle at 20% 25%, rgba(124, 16, 41, 0.35) 0%, transparent 55%), radial-gradient(circle at 80% 75%, rgba(41, 50, 57, 0.45) 0%, transparent 55%)',
+                    }}
+                />
 
                 <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="max-w-3xl">
-                        <Link href="/services" className="inline-flex items-center text-primary hover:text-accent mb-6 transition-colors">
-                            <svg className="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                        <Link
+                            href="/services"
+                            className="inline-flex items-center min-h-[44px] px-2 -ml-2 rounded-lg text-sm font-medium text-[#EBCED4] hover:text-white mb-6 transition-colors duration-200"
+                        >
+                            <svg className="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
                             </svg>
                             Back to Services
                         </Link>
                         <h1 className="text-white mb-6">
                             Infrastructure<br />
-                            <span className="gradient-text">Security</span>
+                            <span className="text-[#F5E6E9]">Security</span>
                         </h1>
-                        <p className="text-xl text-white/80">
+                        <p className="text-xl text-[#E6E1E2] leading-relaxed">
                             Enterprise-grade cybersecurity solutions that protect your critical assets from evolving threats.
                             From perimeter defense to Zero Trust architecture, we secure every layer of your infrastructure.
                         </p>
@@ -110,64 +115,65 @@ export default function SecurityPage() {
             <section className="section-container">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     <div>
-                        <span className="text-primary font-semibold uppercase tracking-wider">Overview</span>
-                        <h2 className="mt-4 mb-6">Security Without Compromise</h2>
-                        <p className="text-muted text-lg mb-6">
+                        <h2 className="mb-6">Security Without Compromise</h2>
+                        <p className="text-muted text-lg mb-6 leading-relaxed">
                             In an era of sophisticated cyber threats, traditional perimeter security is no longer enough.
                             Organizations need a comprehensive security strategy that protects data, applications, and
                             infrastructure at every layer.
                         </p>
-                        <p className="text-muted text-lg mb-6">
+                        <p className="text-muted text-lg mb-6 leading-relaxed">
                             Easy System delivers enterprise security solutions backed by certified security professionals
                             and strategic partnerships with leading security vendors. We help you build a security posture
                             that protects against today&apos;s threats while adapting to tomorrow&apos;s challenges.
                         </p>
-                        <p className="text-muted text-lg">
+                        <p className="text-muted text-lg leading-relaxed">
                             Our approach combines technology, process, and people to create defense-in-depth security
                             that keeps your organization protected around the clock.
                         </p>
                     </div>
                     <div className="grid grid-cols-2 gap-6">
                         <div className="card text-center">
-                            <div className="text-4xl font-heading font-bold text-primary mb-2">24/7</div>
-                            <div className="text-muted">SOC Monitoring</div>
+                            <div className="text-4xl font-heading font-bold text-primary tabular-nums mb-2">24/7</div>
+                            <div className="text-muted font-medium">SOC Monitoring</div>
                         </div>
                         <div className="card text-center">
-                            <div className="text-4xl font-heading font-bold text-primary mb-2">&lt;15min</div>
-                            <div className="text-muted">Incident Response</div>
+                            <div className="text-4xl font-heading font-bold text-primary tabular-nums mb-2">&lt;15min</div>
+                            <div className="text-muted font-medium">Incident Response</div>
                         </div>
                         <div className="card text-center">
                             <div className="text-4xl font-heading font-bold text-primary mb-2">Zero</div>
-                            <div className="text-muted">Trust Framework</div>
+                            <div className="text-muted font-medium">Trust Framework</div>
                         </div>
                         <div className="card text-center">
                             <div className="text-4xl font-heading font-bold text-primary mb-2">ISO</div>
-                            <div className="text-muted">27001 Aligned</div>
+                            <div className="text-muted font-medium tabular-nums">27001 Aligned</div>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* Capabilities */}
-            <section className="bg-gray-50 py-20">
+            <section className="bg-white py-20 border-y border-gray-200/80">
                 <div className="section-container">
                     <div className="section-title">
-                        <span className="text-primary font-semibold uppercase tracking-wider">Capabilities</span>
-                        <h2 className="mt-4">Security Services</h2>
+                        <h2>Security Services</h2>
+                        <p>
+                            Multi-layered defense, identity governance, and continuous compliance across your enterprise
+                        </p>
                     </div>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {capabilities.map((capability) => (
-                            <div key={capability.title} className="card">
+                            <div key={capability.title} className="card bg-[#F4F4F4]">
                                 <h3 className="font-heading font-bold text-xl mb-4">{capability.title}</h3>
-                                <p className="text-muted mb-6">{capability.description}</p>
-                                <ul className="space-y-2">
+                                <p className="text-muted mb-6 leading-relaxed">{capability.description}</p>
+                                <ul className="space-y-2.5">
                                     {capability.features.map((feature) => (
                                         <li key={feature} className="flex items-start text-sm">
-                                            <svg className="w-4 h-4 text-primary mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <svg className="w-4 h-4 text-primary mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                                                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                                             </svg>
-                                            <span className="text-muted">{feature}</span>
+                                            <span className="text-foreground font-medium">{feature}</span>
                                         </li>
                                     ))}
                                 </ul>
@@ -180,44 +186,46 @@ export default function SecurityPage() {
             {/* Security Operations Model */}
             <section className="section-container">
                 <div className="section-title">
-                    <span className="text-primary font-semibold uppercase tracking-wider">Operations</span>
-                    <h2 className="mt-4">Security Operations Model</h2>
+                    <h2>Security Operations Model</h2>
+                    <p>
+                        Closed-loop detection, containment, and architectural hardening
+                    </p>
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-8">
                     <div className="card-service">
-                        <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-6">
-                            <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-6 shadow-md">
+                            <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                             </svg>
                         </div>
-                        <h4 className="font-heading font-bold text-xl mb-4">Detect</h4>
-                        <p className="text-muted">
+                        <h3 className="font-heading font-bold text-xl mb-4">Detect</h3>
+                        <p className="text-muted leading-relaxed">
                             Continuous monitoring across your infrastructure with advanced threat detection,
                             anomaly identification, and correlation of security events.
                         </p>
                     </div>
                     <div className="card-service">
-                        <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-6">
-                            <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-6 shadow-md">
+                            <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
                             </svg>
                         </div>
-                        <h4 className="font-heading font-bold text-xl mb-4">Respond</h4>
-                        <p className="text-muted">
+                        <h3 className="font-heading font-bold text-xl mb-4">Respond</h3>
+                        <p className="text-muted leading-relaxed">
                             Rapid incident response with predefined playbooks, automated containment,
                             and expert escalation paths to minimize impact.
                         </p>
                     </div>
                     <div className="card-service">
-                        <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-6">
-                            <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-6 shadow-md">
+                            <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                             </svg>
                         </div>
-                        <h4 className="font-heading font-bold text-xl mb-4">Protect</h4>
-                        <p className="text-muted">
+                        <h3 className="font-heading font-bold text-xl mb-4">Protect</h3>
+                        <p className="text-muted leading-relaxed">
                             Proactive security measures including hardening, patching, and continuous
                             improvement based on lessons learned.
                         </p>
@@ -230,11 +238,14 @@ export default function SecurityPage() {
                 <div className="absolute inset-0 bg-hero-pattern" />
                 <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-white mb-6">Concerned About Your Security Posture?</h2>
-                    <p className="text-xl text-white/80 mb-10">
+                    <p className="text-xl text-[#F5E6E9] mb-10 leading-relaxed">
                         Get a comprehensive security assessment from our certified experts.
                         We&apos;ll identify vulnerabilities and provide actionable recommendations.
                     </p>
-                    <Link href="/contact" className="bg-white text-primary font-semibold px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors shadow-lg inline-block">
+                    <Link
+                        href="/contact"
+                        className="inline-flex items-center justify-center min-h-[44px] bg-white text-primary font-semibold px-8 py-4 rounded-lg hover:bg-[#F5E6E9] transition-all duration-300 ease-apple-spring shadow-lg active:scale-[0.98]"
+                    >
                         Request Security Assessment
                     </Link>
                 </div>

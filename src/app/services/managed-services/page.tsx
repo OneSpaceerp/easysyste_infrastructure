@@ -17,20 +17,30 @@ export default function ManagedServicesPage() {
     return (
         <>
             {/* Hero Section */}
-            <section className="relative pt-32 pb-20 bg-gradient-to-br from-foreground via-gray-900 to-foreground overflow-hidden">
+            <section className="relative pt-32 pb-20 bg-[#0E0D0D] overflow-hidden border-b border-white/10">
+                <div
+                    className="absolute inset-0 pointer-events-none"
+                    style={{
+                        backgroundImage:
+                            'radial-gradient(circle at 20% 25%, rgba(124, 16, 41, 0.35) 0%, transparent 55%), radial-gradient(circle at 80% 75%, rgba(41, 50, 57, 0.45) 0%, transparent 55%)',
+                    }}
+                />
                 <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="max-w-3xl">
-                        <Link href="/services" className="inline-flex items-center text-primary hover:text-accent mb-6 transition-colors">
-                            <svg className="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                        <Link
+                            href="/services"
+                            className="inline-flex items-center min-h-[44px] px-2 -ml-2 rounded-lg text-sm font-medium text-[#EBCED4] hover:text-white mb-6 transition-colors duration-200"
+                        >
+                            <svg className="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
                             </svg>
                             Back to Services
                         </Link>
                         <h1 className="text-white mb-6">
                             Managed Services<br />
-                            <span className="gradient-text">& Support</span>
+                            <span className="text-[#F5E6E9]">&amp; Support</span>
                         </h1>
-                        <p className="text-xl text-white/80">
+                        <p className="text-xl text-[#E6E1E2] leading-relaxed">
                             24/7 monitoring, proactive maintenance, and expert support that keeps your infrastructure
                             running at peak performance.
                         </p>
@@ -41,22 +51,32 @@ export default function ManagedServicesPage() {
             {/* Support Models */}
             <section className="section-container">
                 <div className="section-title">
-                    <span className="text-primary font-semibold uppercase tracking-wider">Support Models</span>
-                    <h2 className="mt-4">Choose Your SLA</h2>
+                    <h2>Choose Your SLA</h2>
+                    <p>
+                        Predictable response times, proactive monitoring, and dedicated engineering coverage
+                    </p>
                 </div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {supportModels.map((model) => (
-                        <div key={model.name} className="card text-center hover:border-2 hover:border-primary transition-all">
+                        <div
+                            key={model.name}
+                            className="card text-center hover:border-primary/40 hover:-translate-y-1 transition-all duration-300 ease-apple-spring"
+                        >
                             <h3 className="font-heading font-bold text-2xl text-primary mb-4">{model.name}</h3>
-                            <div className="text-3xl font-bold mb-2">{model.response}</div>
+                            <div className="text-3xl font-heading font-bold text-foreground tabular-nums mb-1">{model.response}</div>
                             <div className="text-muted text-sm mb-4">Response Time</div>
-                            <div className="bg-primary/10 rounded-lg p-2 mb-6">
-                                <span className="text-primary font-medium">{model.coverage}</span>
+                            <div className="bg-primary/10 rounded-lg py-2 px-3 mb-6">
+                                <span className="text-primary font-semibold text-sm tabular-nums">{model.coverage}</span>
                             </div>
-                            <ul className="space-y-2 text-sm text-muted">
+                            <ul className="space-y-2.5 text-sm text-foreground font-medium">
                                 {model.features.map((feature) => (
-                                    <li key={feature}>{feature}</li>
+                                    <li key={feature} className="flex items-center justify-center gap-2">
+                                        <svg className="w-4 h-4 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                                        </svg>
+                                        <span>{feature}</span>
+                                    </li>
                                 ))}
                             </ul>
                         </div>
@@ -69,10 +89,13 @@ export default function ManagedServicesPage() {
                 <div className="absolute inset-0 bg-hero-pattern" />
                 <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-white mb-6">Need Reliable IT Support?</h2>
-                    <p className="text-xl text-white/80 mb-10">
+                    <p className="text-xl text-[#F5E6E9] mb-10 leading-relaxed">
                         Let us handle your infrastructure so you can focus on your business.
                     </p>
-                    <Link href="/contact" className="bg-white text-primary font-semibold px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors shadow-lg inline-block">
+                    <Link
+                        href="/contact"
+                        className="inline-flex items-center justify-center min-h-[44px] bg-white text-primary font-semibold px-8 py-4 rounded-lg hover:bg-[#F5E6E9] transition-all duration-300 ease-apple-spring shadow-lg active:scale-[0.98]"
+                    >
                         Get Support Quote
                     </Link>
                 </div>

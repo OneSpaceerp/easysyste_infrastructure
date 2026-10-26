@@ -29,20 +29,23 @@ module.exports = {
                 background: '#F4F4F4',
                 foreground: '#0E0D0D',
                 muted: {
-                    DEFAULT: '#6B7280',
-                    light: '#9CA3AF',
+                    DEFAULT: '#4B5563',
+                    light: '#6B7280',
                 },
             },
             fontFamily: {
-                heading: ['var(--font-montserrat)', 'system-ui', 'sans-serif'],
-                body: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+                heading: ['var(--font-montserrat)', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],
+                body: ['var(--font-inter)', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],
+            },
+            transitionTimingFunction: {
+                'apple-spring': 'cubic-bezier(0.22, 1, 0.36, 1)',
+                'apple-out': 'cubic-bezier(0.16, 1, 0.3, 1)',
             },
             animation: {
-                'fade-in': 'fadeIn 0.5s ease-out',
-                'slide-up': 'slideUp 0.5s ease-out',
-                'slide-in-left': 'slideInLeft 0.5s ease-out',
-                'slide-in-right': 'slideInRight 0.5s ease-out',
-                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'fade-in': 'fadeIn 0.35s cubic-bezier(0.22, 1, 0.36, 1) forwards',
+                'slide-up': 'slideUp 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards',
+                'slide-in-left': 'slideInLeft 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards',
+                'slide-in-right': 'slideInRight 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards',
             },
             keyframes: {
                 fadeIn: {
@@ -50,15 +53,15 @@ module.exports = {
                     '100%': { opacity: '1' },
                 },
                 slideUp: {
-                    '0%': { opacity: '0', transform: 'translateY(20px)' },
+                    '0%': { opacity: '0', transform: 'translateY(12px)' },
                     '100%': { opacity: '1', transform: 'translateY(0)' },
                 },
                 slideInLeft: {
-                    '0%': { opacity: '0', transform: 'translateX(-20px)' },
+                    '0%': { opacity: '0', transform: 'translateX(-12px)' },
                     '100%': { opacity: '1', transform: 'translateX(0)' },
                 },
                 slideInRight: {
-                    '0%': { opacity: '0', transform: 'translateX(20px)' },
+                    '0%': { opacity: '0', transform: 'translateX(12px)' },
                     '100%': { opacity: '1', transform: 'translateX(0)' },
                 },
             },

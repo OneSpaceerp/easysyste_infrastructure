@@ -55,16 +55,20 @@ export default function CaseStudiesPage() {
     return (
         <>
             {/* Hero Section */}
-            <section className="relative pt-32 pb-20 bg-gradient-to-br from-foreground via-gray-900 to-foreground overflow-hidden">
+            <section className="relative pt-32 pb-20 bg-[#0E0D0D] overflow-hidden border-b border-white/10">
+                <div
+                    className="absolute inset-0 pointer-events-none"
+                    style={{
+                        backgroundImage:
+                            'radial-gradient(circle at 20% 25%, rgba(124, 16, 41, 0.35) 0%, transparent 55%), radial-gradient(circle at 80% 75%, rgba(41, 50, 57, 0.45) 0%, transparent 55%)',
+                    }}
+                />
                 <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <span className="inline-block px-4 py-2 bg-primary/20 text-primary rounded-full text-sm font-medium mb-6">
-                        Success Stories
-                    </span>
                     <h1 className="text-white mb-6">
                         Case<br />
-                        <span className="gradient-text">Studies</span>
+                        <span className="text-[#F5E6E9]">Studies</span>
                     </h1>
-                    <p className="text-xl text-white/80 max-w-3xl mx-auto">
+                    <p className="text-xl text-[#E6E1E2] max-w-3xl mx-auto leading-relaxed">
                         Real-world examples of how Easy System helps enterprises transform their infrastructure.
                     </p>
                 </div>
@@ -72,44 +76,47 @@ export default function CaseStudiesPage() {
 
             {/* Case Studies */}
             <section className="section-container">
-                <div className="space-y-16">
+                <div className="space-y-12">
                     {caseStudies.map((study) => (
-                        <div key={study.id} className="card p-8 md:p-12">
+                        <article key={study.id} className="card p-8 md:p-12">
                             <div className="flex flex-wrap items-center gap-4 mb-6">
-                                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">
+                                <span className="px-3.5 py-1 bg-primary/10 text-primary rounded-full text-sm font-semibold">
                                     {study.industry}
                                 </span>
-                                <h3 className="font-heading font-bold text-2xl">{study.client}</h3>
+                                <h2 className="font-heading font-bold text-2xl sm:text-3xl">{study.client}</h2>
                             </div>
 
                             <div className="grid lg:grid-cols-3 gap-8 mb-8">
                                 <div>
-                                    <h4 className="font-heading font-bold text-lg mb-3 text-primary">Challenge</h4>
-                                    <p className="text-muted">{study.challenge}</p>
+                                    <h3 className="font-heading font-bold text-lg mb-3 text-primary">Challenge</h3>
+                                    <p className="text-muted leading-relaxed tabular-nums">{study.challenge}</p>
                                 </div>
                                 <div className="lg:col-span-2">
-                                    <h4 className="font-heading font-bold text-lg mb-3 text-primary">Solution</h4>
-                                    <p className="text-muted">{study.solution}</p>
+                                    <h3 className="font-heading font-bold text-lg mb-3 text-primary">Solution</h3>
+                                    <p className="text-muted leading-relaxed tabular-nums">{study.solution}</p>
                                 </div>
                             </div>
 
-                            <div className="grid md:grid-cols-2 gap-8">
+                            <div className="grid md:grid-cols-2 gap-8 pt-6 border-t border-gray-200/80">
                                 <div>
-                                    <h4 className="font-heading font-bold text-lg mb-3">Technologies Used</h4>
+                                    <h3 className="font-heading font-bold text-lg mb-3">Technologies Used</h3>
                                     <div className="flex flex-wrap gap-2">
                                         {study.technologies.map((tech) => (
-                                            <span key={tech} className="px-3 py-1 bg-gray-100 rounded-full text-sm">
+                                            <span
+                                                key={tech}
+                                                className="px-3.5 py-1.5 bg-[#F4F4F4] border border-gray-200/80 rounded-lg text-sm font-medium text-foreground"
+                                            >
                                                 {tech}
                                             </span>
                                         ))}
                                     </div>
                                 </div>
                                 <div>
-                                    <h4 className="font-heading font-bold text-lg mb-3">Results</h4>
-                                    <ul className="space-y-2">
+                                    <h3 className="font-heading font-bold text-lg mb-3">Results</h3>
+                                    <ul className="space-y-2.5">
                                         {study.results.map((result) => (
-                                            <li key={result} className="flex items-start text-muted">
-                                                <svg className="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <li key={result} className="flex items-start text-foreground font-medium tabular-nums">
+                                                <svg className="w-5 h-5 text-primary mr-2.5 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                                                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                                                 </svg>
                                                 {result}
@@ -118,7 +125,7 @@ export default function CaseStudiesPage() {
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                     ))}
                 </div>
             </section>
@@ -128,10 +135,13 @@ export default function CaseStudiesPage() {
                 <div className="absolute inset-0 bg-hero-pattern" />
                 <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-white mb-6">Ready to Be Our Next Success Story?</h2>
-                    <p className="text-xl text-white/80 mb-10">
+                    <p className="text-xl text-[#F5E6E9] mb-10 leading-relaxed">
                         Let&apos;s discuss how we can help transform your infrastructure.
                     </p>
-                    <Link href="/contact" className="bg-white text-primary font-semibold px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors shadow-lg inline-block">
+                    <Link
+                        href="/contact"
+                        className="inline-flex items-center justify-center min-h-[44px] bg-white text-primary font-semibold px-8 py-4 rounded-lg hover:bg-[#F5E6E9] transition-all duration-300 ease-apple-spring shadow-lg active:scale-[0.98]"
+                    >
                         Start Your Project
                     </Link>
                 </div>

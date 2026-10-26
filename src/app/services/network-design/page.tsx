@@ -66,26 +66,31 @@ export default function NetworkDesignPage() {
     return (
         <>
             {/* Hero Section */}
-            <section className="relative pt-32 pb-20 bg-gradient-to-br from-foreground via-gray-900 to-foreground overflow-hidden">
-                <div className="absolute inset-0 opacity-10">
-                    <div className="absolute inset-0" style={{
-                        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%237C1029' fill-opacity='0.3'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-                    }} />
-                </div>
+            <section className="relative pt-32 pb-20 bg-[#0E0D0D] overflow-hidden border-b border-white/10">
+                <div
+                    className="absolute inset-0 pointer-events-none"
+                    style={{
+                        backgroundImage:
+                            'radial-gradient(circle at 20% 25%, rgba(124, 16, 41, 0.35) 0%, transparent 55%), radial-gradient(circle at 80% 75%, rgba(41, 50, 57, 0.45) 0%, transparent 55%)',
+                    }}
+                />
 
                 <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="max-w-3xl">
-                        <Link href="/services" className="inline-flex items-center text-primary hover:text-accent mb-6 transition-colors">
-                            <svg className="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                        <Link
+                            href="/services"
+                            className="inline-flex items-center min-h-[44px] px-2 -ml-2 rounded-lg text-sm font-medium text-[#EBCED4] hover:text-white mb-6 transition-colors duration-200"
+                        >
+                            <svg className="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
                             </svg>
                             Back to Services
                         </Link>
                         <h1 className="text-white mb-6">
                             Network Design<br />
-                            <span className="gradient-text">& Management</span>
+                            <span className="text-[#F5E6E9]">&amp; Management</span>
                         </h1>
-                        <p className="text-xl text-white/80">
+                        <p className="text-xl text-[#E6E1E2] leading-relaxed">
                             End-to-end network architecture solutions from initial assessment to ongoing optimization.
                             We design, implement, and manage networks that deliver the performance and reliability your business demands.
                         </p>
@@ -97,73 +102,74 @@ export default function NetworkDesignPage() {
             <section className="section-container">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     <div>
-                        <span className="text-primary font-semibold uppercase tracking-wider">Overview</span>
-                        <h2 className="mt-4 mb-6">Connectivity That Powers Your Business</h2>
-                        <p className="text-muted text-lg mb-6">
+                        <h2 className="mb-6">Connectivity That Powers Your Business</h2>
+                        <p className="text-muted text-lg mb-6 leading-relaxed">
                             In today&apos;s digital-first world, your network is the foundation of everything you do.
                             Applications, data, and communications all depend on a robust, secure, and high-performance
                             network infrastructure.
                         </p>
-                        <p className="text-muted text-lg mb-6">
+                        <p className="text-muted text-lg mb-6 leading-relaxed">
                             Easy System brings deep expertise in enterprise networking, with certified professionals
                             across Cisco, Juniper, Fortinet, and other leading platforms. We design networks that not
                             only meet your current needs but scale seamlessly as your business grows.
                         </p>
-                        <p className="text-muted text-lg">
+                        <p className="text-muted text-lg leading-relaxed">
                             Whether you&apos;re building a new network from scratch, modernizing legacy infrastructure,
                             or extending connectivity to the cloud, our team delivers solutions that work.
                         </p>
                     </div>
                     <div className="grid grid-cols-2 gap-6">
                         <div className="card text-center">
-                            <div className="text-4xl font-heading font-bold text-primary mb-2">99.99%</div>
-                            <div className="text-muted">Uptime SLA</div>
+                            <div className="text-4xl font-heading font-bold text-primary tabular-nums mb-2">99.99%</div>
+                            <div className="text-muted font-medium">Uptime SLA</div>
                         </div>
                         <div className="card text-center">
                             <div className="text-4xl font-heading font-bold text-primary mb-2">Sub-ms</div>
-                            <div className="text-muted">Latency Target</div>
+                            <div className="text-muted font-medium">Latency Target</div>
                         </div>
                         <div className="card text-center">
-                            <div className="text-4xl font-heading font-bold text-primary mb-2">24/7</div>
-                            <div className="text-muted">NOC Support</div>
+                            <div className="text-4xl font-heading font-bold text-primary tabular-nums mb-2">24/7</div>
+                            <div className="text-muted font-medium">NOC Support</div>
                         </div>
                         <div className="card text-center">
-                            <div className="text-4xl font-heading font-bold text-primary mb-2">100+</div>
-                            <div className="text-muted">Networks Deployed</div>
+                            <div className="text-4xl font-heading font-bold text-primary tabular-nums mb-2">100+</div>
+                            <div className="text-muted font-medium">Networks Deployed</div>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* Capabilities */}
-            <section className="bg-gray-50 py-20">
+            <section className="bg-white py-20 border-y border-gray-200/80">
                 <div className="section-container">
                     <div className="section-title">
-                        <span className="text-primary font-semibold uppercase tracking-wider">Capabilities</span>
-                        <h2 className="mt-4">What We Deliver</h2>
+                        <h2>What We Deliver</h2>
+                        <p>
+                            Engineered network capabilities built for resilience, throughput, and operational clarity
+                        </p>
                     </div>
 
                     <div className="space-y-12">
                         {capabilities.map((capability, index) => (
-                            <div key={capability.title} className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
+                            <div key={capability.title} className="grid lg:grid-cols-2 gap-12 items-center">
                                 <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
                                     <h3 className="font-heading font-bold text-2xl mb-4">{capability.title}</h3>
-                                    <p className="text-muted text-lg mb-6">{capability.description}</p>
+                                    <p className="text-muted text-lg mb-6 leading-relaxed">{capability.description}</p>
                                     <ul className="space-y-3">
                                         {capability.features.map((feature) => (
                                             <li key={feature} className="flex items-start">
-                                                <svg className="w-5 h-5 text-primary mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                <svg className="w-5 h-5 text-primary mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                                                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                                                 </svg>
-                                                <span className="text-foreground">{feature}</span>
+                                                <span className="text-foreground font-medium">{feature}</span>
                                             </li>
                                         ))}
                                     </ul>
                                 </div>
-                                <div className={`bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl p-12 flex items-center justify-center ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
+                                <div className={`bg-[#F4F4F4] border border-gray-200/80 rounded-3xl p-12 flex items-center justify-center ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
                                     <div className="text-primary">
-                                        <svg className="w-32 h-32" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={0.5} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                                        <svg className="w-28 h-28" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={0.75} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                                         </svg>
                                     </div>
                                 </div>
@@ -176,17 +182,24 @@ export default function NetworkDesignPage() {
             {/* Deliverables */}
             <section className="section-container">
                 <div className="section-title">
-                    <span className="text-primary font-semibold uppercase tracking-wider">Deliverables</span>
-                    <h2 className="mt-4">What You Get</h2>
+                    <h2>Project Deliverables</h2>
+                    <p>
+                        Clear architectural documentation, baseline benchmarks, and live operational visibility
+                    </p>
                 </div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {deliverables.map((deliverable, index) => (
-                        <div key={deliverable} className="flex items-center p-6 bg-white rounded-xl shadow-lg border-l-4 border-primary">
-                            <span className="text-2xl font-heading font-bold text-primary/30 mr-4">
-                                {String(index + 1).padStart(2, '0')}
-                            </span>
-                            <span className="font-medium">{deliverable}</span>
+                    {deliverables.map((deliverable) => (
+                        <div
+                            key={deliverable}
+                            className="flex items-center p-6 bg-white rounded-2xl border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-300 ease-apple-spring"
+                        >
+                            <div className="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <span className="font-semibold text-foreground">{deliverable}</span>
                         </div>
                     ))}
                 </div>
@@ -197,11 +210,14 @@ export default function NetworkDesignPage() {
                 <div className="absolute inset-0 bg-hero-pattern" />
                 <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-white mb-6">Ready to Upgrade Your Network?</h2>
-                    <p className="text-xl text-white/80 mb-10">
+                    <p className="text-xl text-[#F5E6E9] mb-10 leading-relaxed">
                         Get a comprehensive network assessment from our certified engineers.
                         We&apos;ll identify opportunities to improve performance, security, and reliability.
                     </p>
-                    <Link href="/contact" className="bg-white text-primary font-semibold px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors shadow-lg inline-block">
+                    <Link
+                        href="/contact"
+                        className="inline-flex items-center justify-center min-h-[44px] bg-white text-primary font-semibold px-8 py-4 rounded-lg hover:bg-[#F5E6E9] transition-all duration-300 ease-apple-spring shadow-lg active:scale-[0.98]"
+                    >
                         Request Network Assessment
                     </Link>
                 </div>
